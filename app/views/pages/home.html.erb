@@ -1,0 +1,17 @@
+<h1>Users:</h1>
+<% @users.each do |u| %>
+	<p><%= u.username %> <%= u.email %> <%= u.age %></p>
+<% end %>
+<h1>Cats:</h1>
+<% @cats.each do |c| %>
+	<p><%= c.name %></p>
+<% end %>
+<h1>Todos:</h1>
+<h2>Finished tasks</h2>
+<% @finished_tasks.each do |t| %>
+	<p><%= t.tasks %></p>
+<% end %>
+<h2>Unfinished tasks</h2>
+<% @unfinished_tasks.each do |t| %>
+	<p><%= t.tasks %></p>
+<% end %>
